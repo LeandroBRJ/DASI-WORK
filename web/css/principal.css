@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+html, body, ul {
+    margin: 0;
+    padding: 0;
+	color: #555555;
+    font-size: 14px;
+}
+
+h2 {
+    font-size:1.1em;
+    margin:5px 0 0 0;
+}
+
+a {
+    color: #C1D100; 
+}
+
+#contenu {
+    padding: 10px;  
+}
+
+#menu {
+    background-color: #393939;
+    color: #C1D100;
+    height: 30px;
+    padding-left: 15px;
+}
+
+#menu .title {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+#menu li {
+    display: inline;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
