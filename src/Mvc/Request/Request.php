@@ -39,56 +39,83 @@
 			}	
 			$this->_url = $_SERVEUR['REQUEST_URI'];
 
-			//HTTP_GET pour recevoir $_GET['...'], HTTP_POST pour recevoir $_POST['...']			
 			$this->_aHttpParams[self::HTTP_GET] = $_GET[''];
 			$this->_aHttpParams[self::HTTP_POST] = $_POST[''];
-		}		
-		
-		
-		//methode accesseur (getter)
+		}
+
+
+        /**
+         * Methode accesseur
+         * @return mixed
+         */
 		public function getController(){
 			return $this->_controller;
 		}
 
-		//methode accesseur (getter)
+        /**
+         * Methode accesseur
+         * @return mixed
+         */
 		public function getAction(){
 			return $this->_action ;
 		}
 
-		//methode accesseur (getter)
+        /**
+         * Methode accesseur
+         * @return mixed
+         */
 		public function getUrl(){
 			return $this->_url;
 		}
 
-		//methode accesseur (getter)
+        /**
+         * Methode accesseur
+         * @return mixed
+         */
 		public function getBaseUrl(){
 			return $this->_baseUrl;
 		}
 
-		//methode accesseur (getter)
+        /**
+         * Methode modificateur
+         * @return mixed
+         */
 		public function setController($ctrl){
 			$this->_controller = $ctrl;
 			return $this;
 		}
 
-		//methode accesseur (getter)
+        /**
+         * Methode modificateur
+         * @return mixed
+         */
 		public function setAction($ctrl){
 			$this->_action = $ctrl;
 			return $this;
-		}		
+		}
 
-		//methode accesseur (getter)
+        /**
+         * Methode modificateur
+         * @return mixed
+         */
 		public function setUrl($ctrl){
 			$this->_url = $ctrl;
 			return $this;
-		}		
+		}
 
-		//methode accesseur (getter)
+        /**
+         * Methode modificateur
+         * @return mixed
+         */
 		public function setBaseUrl($ctrl){
 			$this->_baseUrl = $ctrl;
 			return $this;
-		}		
+		}
 
+        /**
+         * Methode pour vérifier si le request c'est POST
+         * @return bool si c'est POST ou pas
+         */
 		public  function isPost(){
 			if($_SERVEUR['REQUEST_METHOD'] === HTTP_POST ){
 				return true;
@@ -96,21 +123,6 @@
 				return false;
 			}
 		}
-
-		/*
-		public  function marcher(){
-			echo "Je marche";
-		}
-
-		public  function parler(){
-			echo "Je parle";
-		}
-
-		//methode sans retour
-		public fonction  sauter(){
-		 echo "sauter";
-		}
-		*/
 
 	}
 
