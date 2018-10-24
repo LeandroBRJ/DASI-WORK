@@ -11,7 +11,6 @@ set_include_path(implode(PATH_SEPARATOR, array(
 /*
  * Instancie et lance l'application
  */
-phpinfo();die;
 include 'Mvc/Application.php';
 $application = new Mvc\Application(array(
 	Mvc\Application::OPTION_APPLICATION_DIRECTORY => APPLICATION_PATH

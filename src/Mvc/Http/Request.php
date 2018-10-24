@@ -190,7 +190,7 @@ class Request
             }
         }
 
-        throw new \Request\Exception('Méthode inconnue');
+        throw new Request\Exception('Méthode inconnue');
     }
 
 }

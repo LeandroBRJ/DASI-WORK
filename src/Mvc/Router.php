@@ -8,7 +8,7 @@
     namespace Mvc;
 
     //c'est necessaire pour prendre en compte un fichier qui n'est pas dans le meme namespace
-    use Mvc\Router\RoutableInterface;
+    use \Mvc\Router\RoutableInterface;
 
 
     require_once 'Router/RoutableInterface.php';
@@ -41,12 +41,16 @@
                 );
 
                 //---------sépare le controleur et l'action
+                //explode pour couper la string en segments
                 $url = explode(self::URL_SEPARATOR,$url);
 
                 //---------propagation du controleur à l'objet requête
+                //si le tableau n'est pas vide
                 if(!empty($url[0])){
+                    //on dépile le premier indice (on le récupere puis on le supprime)
                     $request->setController(array_shift($url));
                     //-------------propagation de l'action à l'objet requete
+                    //si le deuxieme indice du tableau original n'est pas null, on dépile (on le récupere puis on le supprime)
                     if(!empty($url[0])){
                         $request->setAction(array_shift($url));
                     }
