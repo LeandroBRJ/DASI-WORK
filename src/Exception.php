@@ -1,5 +1,5 @@
 <?php
-namespace src\Mvc;
+namespace Mvc;
 
 /**
  * Typage d'exception pour le distributeur

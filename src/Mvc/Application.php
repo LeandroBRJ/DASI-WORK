@@ -1,5 +1,5 @@
 <?php
-namespace Mvc;
+namespace Mvc\Http;
 
 /**
  * Classe représentant l'application

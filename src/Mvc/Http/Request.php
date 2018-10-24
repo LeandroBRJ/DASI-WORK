@@ -1,6 +1,6 @@
 <?php
 //quand on crie une classe, il faut un namespace, pour permettre d’encapsuler les variables
-namespace src\Mvc\Request;
+namespace Mvc\Http;
 
 /**
  * Class Request represenation de request HTTP

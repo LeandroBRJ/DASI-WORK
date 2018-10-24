@@ -1,5 +1,5 @@
 <?php
-namespace Mvc;
+namespace Mvc\Http;
 
 use \Mvc\Dispatcher\Dispatchable;
 use \Mvc\Http\Request as Request;
