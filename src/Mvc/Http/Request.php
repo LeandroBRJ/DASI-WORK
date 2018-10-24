@@ -186,11 +186,11 @@ class Request
                     return $this->{'_getHttpParams'}($sHttpParam, $sKey, $sValue); //on appelle la fonction en passant en parametre le nom de la fonction
                     break;
                 default :
-                    throw new Request\Exception("Type de superglobale ($sHttpParam) non géré");
+                    throw new \Request\Exception("Type de superglobale ($sHttpParam) non géré");
             }
         }
 
-        throw new Request\Exception('Méthode inconnue');
+        throw new \Request\Exception('Méthode inconnue');
     }
 
 }

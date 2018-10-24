@@ -1,5 +1,5 @@
 <?php
-namespace Mvc\Http\Reponse;
+namespace Mvc\Router;
 
 /**
  * Typage d'exception pour le distributeur
@@ -7,5 +7,5 @@ namespace Mvc\Http\Reponse;
  * @author leandro_DA_SILVA
  * @uses exception
  */
-class Exception extends \Mvc\Http\Exception
+class Exception extends \Exception
 {}
